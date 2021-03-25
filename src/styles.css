@@ -1,0 +1,30 @@
+.App {
+    text-align: center;
+  }
+  
+  .Box {
+    width: 50px;
+    height: 50px;
+    outline-width: thin;
+    outline-color: #555;
+    outline-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .column {
+    float: left;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .btn-red {
+    background-color: red;
+  }
+  
