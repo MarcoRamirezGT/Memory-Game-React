@@ -2,11 +2,16 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import './slider.css';
+import Soul from '../images/soulstormF.jpeg';
+import Pascua from '../images/pascua2.png';
+import Outride from '../images/outriders.jpg';
+import Chess from '../images/autochess2.jpg';
+import PlayC from '../images/play.png';
 
 function slider() {
     return (
         <AwesomeSlider>
-            <div data-src="../src/images/soulstormF.jpeg">
+            <div data-src={Soul}>
                 <div className="sda">
                     <h1 className="titulo">
                         El capitulo dos del viaje de Abe <br /> comienza
@@ -18,23 +23,16 @@ function slider() {
                 </div>
             </div>
 
-            <div data-src="../src/images/pascua2.webp">
-                <div className="dataPascua">
-                    <h1 className="descuentos"> Cuatro semanas de grandes descuentos</h1>
 
-                    <p className="textoDescuentos">Ahorra a lo grande en titulos independientes innovadores, exitos esenciales, experencias envolventes de  PS VR, monedas dentro de juegos y más</p>
-                    <button className="btnDescuentos">Ver todas las promociones</button>
-                </div>
-            </div>
 
-            <div data-src="../src/images/outriders.jpg">
+            <div data-src={Outride}>
                 <div className="dataOut">
                     <h1 className="h1Out"> Embárcate en un viaje al poder</h1>
                     <p className="pOut">Outriders combina frenéticas mecánicas de disparos con profundos sistemas de RPG para crear un verdadero género híbrido.</p>
                     <button className="btnOut"> Comprar ahora</button>
                 </div>
             </div>
-            <div data-src="../src/images/autochess2.jpg">
+            <div data-src={Chess}>
                 <div className="divChess">
                     <h1 className="h1Chess">
                         Ya disponible para PS5
@@ -50,7 +48,7 @@ function slider() {
             </div>
 
 
-            <div data-src="../src/images/play.png">
+            <div data-src={PlayC}>
                 <div className="divPlay">
                     <p className="p1Play">
                         Play At Home regresa con una selección gratuita de juegos excelentes y más, que llegará en los próximos meses.
@@ -58,6 +56,14 @@ function slider() {
                     <button className="btnPlay">
                         Más información
                     </button>
+                </div>
+            </div>
+            <div data-src={Pascua}>
+                <div className="dataPascua">
+                    <h1 className="descuentos"> Cuatro semanas de grandes descuentos</h1>
+
+                    <p className="textoDescuentos">Ahorra a lo grande en titulos independientes innovadores, exitos esenciales, experencias envolventes de  PS VR, monedas dentro de juegos y más</p>
+                    <button className="btnDescuentos">Ver todas las promociones</button>
                 </div>
             </div>
 

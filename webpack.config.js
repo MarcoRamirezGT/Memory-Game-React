@@ -53,7 +53,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '/assets/[name].[ext]'
+              name: '/src/images/[name].[ext]'
             }
           },
         ],

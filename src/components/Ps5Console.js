@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Ps5ConsoleImage from '../images/ps5Console.png';
 import Ps5Mando from '../images/mando.png';
-import HeadphonesPs5 from '../images/HeadphonesPs5.png';
+import HeadphonesPs5 from '../images/headphonesPs5.png';
 import ControlPs5 from '../images/control.png';
 import CameraPs5 from '../images/camera.png';
 import { useTransition, animated } from 'react-spring';
