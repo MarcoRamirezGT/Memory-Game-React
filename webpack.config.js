@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+//La configuracion de react fue creado desde 0, para realizarlo utilice el video de la clase y posteriormente instalar el resto de dependencias.
 
 module.exports = {
   entry: {
