@@ -1,0 +1,205 @@
+.divGridGames {
+  background-color: #1f1f1f;
+  margin-top: 67%;
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  left: 0;
+  object-fit: cover;
+}
+.hGames {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.subjectGames {
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 10%;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  text-align: center;
+  height: 10px;
+}
+.btnGridGames {
+  margin-top: 5%;
+  right: 5%;
+  background-image: url(../images/arrow.png);
+  background-color: white;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  cursor: pointer;
+  border: transparent;
+  position: absolute;
+  border-radius: 50%;
+}
+.btnGridGames:hover,
+.btnGridNews:hover {
+  border: 5px solid white;
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.459), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+  color: white;
+}
+.btnGridNews {
+  margin-top: 5%;
+  right: 8%;
+  background-image: url(../images/arrow.png);
+  background-color: white;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  cursor: pointer;
+  border: transparent;
+  position: absolute;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.rootResident {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 25%;
+  margin-top: 10%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.media {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  background-color: transparent;
+}
+.mlb {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 40%;
+  margin-top: 10%;
+  position: absolute;
+  color: transparent;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+
+.deathloop {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 55%;
+  margin-top: 10%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+
+.horizon {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 70%;
+  margin-top: 10%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.ken {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 85%;
+  margin-top: 10%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.root {
+  max-width: 250px;
+  max-height: 350px;
+  object-fit: cover;
+  margin-left: 10%;
+  margin-top: 10%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.ratchet {
+  max-width: 250;
+  max-height: 350;
+  object-fit: cover;
+  margin-left: 10%;
+  margin-top: 27%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.returnal {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 25%;
+  margin-top: 27%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.tk {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 40%;
+  margin-top: 27%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.mass {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 55%;
+  margin-top: 27%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.nier {
+  max-width: 250px;
+  max-height: 3000px;
+  object-fit: cover;
+  margin-left: 70%;
+  margin-top: 27%;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  font-family: 'Courier New';
+}
+.mlb:hover,
+.rootResident:hover,
+.nier:hover,
+.mass:hover,
+.tk:hover,
+.returnal:hover,
+.ratchet:hover,
+.root:hover,
+.ken:hover,
+.horizon:hover,
+.deathloop:hover {
+  opacity: 0.6;
+}

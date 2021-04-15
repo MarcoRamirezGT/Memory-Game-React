@@ -1,0 +1,81 @@
+.divFooter {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  margin-top: 275%;
+  background-color: #00439c;
+  left: 0;
+}
+.logoFo {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.logoFo img {
+  width: 100px;
+}
+.country {
+  font-family: 'Courier New', monospace;
+  font-size: 17px;
+  margin-top: 20%;
+  cursor: pointer;
+
+  color: white;
+}
+.fas,
+.fa-globe {
+  width: 100px;
+  position: absolute;
+  color: white;
+  margin-top: 50%;
+  margin-left: -45%;
+  cursor: pointer;
+}
+.sonyInteractiveLogo {
+  position: absolute;
+  margin-left: 10%;
+  bottom: 5%;
+}
+.sonyInteractiveLogo img {
+  width: 150px;
+}
+.sl {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 17px;
+}
+.containerSoporte {
+  margin-left: 47%;
+  margin-top: 5%;
+  position: absolute;
+}
+.itemsSoport {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 17px;
+  cursor: pointer;
+  width: 200px;
+}
+.containerServicios {
+  margin-left: 62%;
+  margin-top: 5%;
+  position: absolute;
+}
+.itemsServicios {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 17px;
+  cursor: pointer;
+  width: 300px;
+}
+.containerRedes {
+  margin-left: 82%;
+  margin-top: 5%;
+  position: absolute;
+}
+.itemsRedes {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 17px;
+  cursor: pointer;
+}

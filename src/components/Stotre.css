@@ -1,0 +1,44 @@
+.containerStore {
+  width: 100%;
+  height: 100vh;
+
+  position: absolute;
+  left: 0;
+  margin-top: 202%;
+}
+.titleStore {
+  font-family: 'Courier New', monospace;
+  font-size: 45px;
+  margin-left: 25%;
+
+  color: #1f1f1f;
+}
+.subjectStore {
+  font-family: 'Courier New', monospace;
+  width: 75%;
+  text-align: center;
+  margin-left: 10%;
+  color: #636363;
+  font-size: 25px;
+}
+.addOns img {
+  position: absolute;
+  width: 500px;
+  margin-top: 5%;
+  margin-left: 9%;
+  cursor: pointer;
+}
+.divDescuentos img {
+  position: absolute;
+  width: 500px;
+  margin-top: 5%;
+  margin-left: 37%;
+  cursor: pointer;
+}
+.divFree img {
+  position: absolute;
+  width: 500px;
+  margin-top: 5%;
+  margin-left: 65%;
+  cursor: pointer;
+}

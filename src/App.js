@@ -1,101 +1,50 @@
-import React, { Component } from 'react';
-import Header from './componentes/Header';
-import Tablero from './componentes/Tablero';
+import React from 'react';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import construirBaraja from './utils/construirBaraja';
 
+import Slider from './components/slider';
+import Ps5 from './components/ps5';
+import Sony from './components/HeaderSony';
+import Ps5Console from './components/Ps5Console';
 
-const getEstadoInicial = () => {
-  const baraja = construirBaraja();
-  return {
-    baraja,
-    parejaSeleccionada: [],
-    estaComparando: false,
-    numeroDeIntentos: 0    
-  };
-}
+import VideoPlay from './components/VideoComponent';
+import GridGames from './components/gridGames';
+import Ps4 from './components/Ps4';
+import PlaystationPLUS from './components/PlaystationPlus';
+import Store from './components/Store';
+import SocialMedia from './components/SocialMedia';
+import Footer from './components/Footer';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = getEstadoInicial();
-  }
-
-  render() {
+function App() {
     return (
-      <div className="App">
-        <Header 
-          numeroDeIntentos={this.state.numeroDeIntentos}
-          resetearPartida={() => this.resetearPartida()}
-        />
-        <Tablero 
-          baraja={this.state.baraja}
-          parejaSeleccionada={this.state.parejaSeleccionada}
-          seleccionarCarta={(carta) => this.seleccionarCarta(carta)}
-        />
-      </div>
+        <>
+            <Sony />
+            <Router>
+                <Navbar />
+
+
+                <Switch>
+                    <Route path='/' exact />
+                </Switch>
+            </Router>
+            <Slider />
+            <Ps5 />
+            <Ps5Console />
+            <VideoPlay />
+            <GridGames />
+            <Ps4 />
+            <PlaystationPLUS />
+            <Store />
+            <SocialMedia />
+            <Footer />
+
+
+
+
+
+        </>
     );
-  }
-
-  seleccionarCarta(carta) {
-    if (
-      this.state.estaComparando ||
-      this.state.parejaSeleccionada.indexOf(carta) > -1 ||
-      carta.fueAdivinida
-    ) {
-      return;
-    }
-
-    const parejaSeleccionada = [...this.state.parejaSeleccionada, carta];
-    this.setState({
-      parejaSeleccionada
-    });
-
-    if (parejaSeleccionada.length === 2) {
-      this.compararPareja(parejaSeleccionada);
-    }
-  }
-
-  compararPareja(parejaSeleccionada) {
-    this.setState({estaComparando: true});
-
-    setTimeout(() => {
-      const [primeraCarta, segundaCarta] = parejaSeleccionada;
-      let baraja = this.state.baraja;
-
-      if (primeraCarta.icono === segundaCarta.icono) {
-        baraja = baraja.map((carta) => {
-          if (carta.icono !== primeraCarta.icono) {
-            return carta;
-          }
-
-          return {...carta, fueAdivinada: true};
-        });
-      }
-
-      this.verificarSiHayGanador(baraja);
-      this.setState({
-        parejaSeleccionada: [],
-        baraja,
-        estaComparando: false,
-        numeroDeIntentos: this.state.numeroDeIntentos + 1
-      })
-    }, 1000)
-  }
-
-  verificarSiHayGanador(baraja) {
-    if (
-      baraja.filter((carta) => !carta.fueAdivinada).length === 0
-    ) {
-      alert(`Ganaste en ${this.state.numeroDeIntentos} intentos!`);
-    }
-  }
-
-  resetearPartida() {
-    this.setState(
-      getEstadoInicial()
-    );
-  }
 }
 
 export default App;
